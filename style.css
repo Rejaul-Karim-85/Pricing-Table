@@ -1,0 +1,174 @@
+:root {
+   --white-color: #FFFFFF;
+   --dark-blue-color: #023047;
+   --gray-color: #06D6A0;
+   --yellow-color: #FFD166;
+   --light-color: #F1FAEE;
+
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "poppins" sans-serif;
+}
+.priceing-table-container {
+   margin-top: 70px;
+}
+.priceing-table-container .pricing-header {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.priceing-table-container h2 {
+   font-size: 24px;
+   margin-right: 30px;
+}
+.priceing-table-container .plans-switch {
+   width: 250px;
+   background: var(--dark-blue-color);
+   height: 55px;
+   appearance: none;
+   border-radius: 24px;
+   outline: none;
+   cursor: pointer;
+   position: relative;
+}
+.priceing-table-container .plans-switch-container {
+   position: relative;
+   display: inline-block;
+   color: var(--white-color);
+   
+}
+.priceing-table-container .plans-switch-container .monthly {
+   position: absolute;
+   top: 20px;
+   left: 28px;
+   font-size: 18px;
+   pointer-events: none;
+
+}
+.priceing-table-container .plans-switch-container .yearly {
+   position: absolute;
+   top: 20px;
+   right: 28px;
+   font-size: 18px;
+   pointer-events: none;
+}
+.priceing-table-container .plans-switch::before {
+   content: "";
+   position: absolute;
+   background: var(--gray-color);
+   width: 100px;
+   height: 40px;
+   border-radius: 24px;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 6px;
+   transition: all 0.5s;
+}
+.priceing-table-container .plans-switch:checked::before {
+   left: 138px;
+   width: 106px;
+}
+.priceing-table-container .table-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 70px;
+}
+.table-container .table {
+   background: var(--light-color);
+   width: 270px;
+   padding: 32px;
+   position: relative;
+}
+.table .container h3 {
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 0px;
+   margin-top: 0;
+   
+}
+.table .pricing-section {
+   margin-top: 30px;
+}
+.pricing-section .price {
+   font-size: 54px;
+   font-weight: bold;
+}
+.pricing-section span:last-child {
+   font-size: 18px;
+   text-align: center;
+}
+.table .container .contant {
+   font-size: 18px;
+}
+.table .container ul {
+   list-style: none;
+   padding: 0;
+   margin-bottom: 50px;
+}
+.table .container ul li {
+   margin: 24px 0;
+   display: flex;
+   font-size: 18px;
+}
+.table .container ul li::before {
+   content:url('images/bi_check-circle-fill.svg');
+   margin-right: 15px;
+   margin-top: 2px;
+   font-size: 18px;
+}
+.table .container .btn {
+   text-decoration: none;
+   font-size: 24px;
+   display: inline-block;
+   width: 100%;
+   font-weight: bold;
+   text-align: center;
+   background: var(--dark-blue-color);
+   color: var(--white-color);
+   padding: 16px 0;
+   border-radius: 24px;
+   padding-left: 0;
+   padding-right: 0;
+}
+.table-container .table img.table-bg {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+}
+.table-container .table .container {
+   z-index: 200;
+}
+.table-container .table.value-best {
+   background: var(--dark-blue-color);
+   color: var(--white-color);
+   border-radius: 24px;
+   width: 285px;
+
+}
+.table-container .table.table.value-best .value {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   text-align: center;
+   padding: 8px;
+   font-size: 18px;
+   background: #EF476F;
+   border-radius: 24px 24px 0 0;
+   font-weight: bold;
+
+}
+.table-container .table .container {
+   padding-top: 40px;
+}
+.table-container .table.table.value-best a.btn {
+   background: var(--yellow-color);
+   color: var(--dark-blue-color);
+}
